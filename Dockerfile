@@ -9,7 +9,7 @@ WORKDIR /home/digibyte
 
 RUN apt-get -y install software-properties-common \
     && git clone https://github.com/digibyte/digibyte . \
-    && git checkout v6.16.5.1
+    && git checkout v7.17.2
 
 RUN ./autogen.sh \
     && ./configure --with-incompatible-bdb \
